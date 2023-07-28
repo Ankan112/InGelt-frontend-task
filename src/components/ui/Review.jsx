@@ -18,7 +18,7 @@ const Review = () => {
               <div>
                 <img src={quotes} alt="" />
               </div>
-              <p className="text-xl font-medium w-1/2 mt-2">
+              <p className="text-xl font-medium w-[40%] mt-2">
                 Ipsum vel nobis doloremque est aut non accusantium vero
                 molestias. Et est minima dolorem eum modi atque sint nobis. Enim
                 quod facere. Reiciendis necessitatibus ipsam non aspernatur
@@ -40,7 +40,7 @@ const Review = () => {
               <img src={reviewImage} alt="" />
             </div>
           </div>
-          <div className="flex items-center justify-center absolute -bottom-[190px] left-[180px]">
+          <div className="flex items-center justify-center absolute -bottom-[160px] left-[180px]">
             <div>
               <img src={leftArrow} alt="" />
             </div>

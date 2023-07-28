@@ -2,7 +2,6 @@ import bannerIcon1 from "../../assets/icon2.png";
 import bannerIcon2 from "../../assets/icon1.png";
 import bannerIcon3 from "../../assets/icon3.png";
 import banner from "../../assets/banner.png";
-import bannerBg from "../../assets/22.png";
 import PhoneInput from "react-phone-number-input";
 import { useState } from "react";
 import "react-phone-number-input/style.css";
@@ -11,7 +10,7 @@ const Banner = () => {
   const [value, setValue] = useState();
   return (
     <div className="max-w-screen-xl w-10/12 mx-auto my-10">
-      <div className="flex flex-col-reverse mb-10 md:flex-row">
+      <div className="flex flex-col-reverse gap-10 mb-10 md:flex-row">
         <div className="md:w-1/2 text-center">
           <h1 className="text-4xl text-[#001E43] font-bold">
             Start Your IELTS Preparation <br /> And Get Desire Bands
@@ -26,19 +25,19 @@ const Banner = () => {
                 <p className="text-white text-sm h-5 w-5 mr-2 flex justify-center items-center rounded-full bg-[#001E43]">
                   1
                 </p>
-                <span>Start</span>
+                <span className="text-lg font-medium">Start</span>
               </div>
               <div className="flex justify-center items-center">
                 <p className="text-white text-sm h-5 w-5 mr-2 flex justify-center items-center rounded-full bg-[#001E43]">
                   2
                 </p>
-                <span>Fill Detail</span>
+                <span className="text-lg font-medium">Fill Detail</span>
               </div>
               <div className="flex justify-center items-center">
                 <p className="text-white text-sm h-5 w-5 mr-2 flex justify-center items-center rounded-full bg-[#001E43]">
                   3
                 </p>
-                <span>Confirm</span>
+                <span className="text-lg font-medium">Confirm</span>
               </div>
             </div>
             <h2 className="text-3xl text-left font-semibold text-[#001E43]">
@@ -74,10 +73,7 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className="md:w-1/2 flex relative">
-          <div className="absolute -top-[50px] -right-[480px]">
-            {/* <img className="h-[50%] w-[50%]" src={bannerBg} alt="" /> */}
-          </div>
+        <div className="md:w-1/2 flex">
           <div className="flex justify-center items-center">
             <img src={banner} alt="" />
           </div>
